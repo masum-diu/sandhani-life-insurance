@@ -1,0 +1,147 @@
+/* @import url('https://fonts.cdnfonts.com/css/visbycf'); */
+/* @font-face {
+  font-family: 'VisbyCF';
+  src: url('/fonts/Fontspring-DEMO-visbycf-light.otf') format('opentype');
+} */
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
+
+body {
+  /* font-family: 'Visby cf', sans-serif; */
+  /* font-family: 'VisbyCF', sans-serif; */
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.swiper-button-prev {
+  background-image: url("/assets/angle-left.png");
+  background-repeat: no-repeat;
+  background-size: 25px auto;
+  background-position: center;
+  background-color: #104870;
+  padding: 3px 11.5px;
+  border-radius: 50px;
+
+}
+
+.swiper-button-next {
+  background-image: url("/assets/angle-right.png");
+  background-repeat: no-repeat;
+  background-size: 25px auto;
+  background-position: center;
+  background-color: #104870;
+  padding: 3px 11.5px;
+  border-radius: 50px;
+
+}
+
+/* Replace default icons with custom icons */
+
+
+/* :root {
+  --swiper-navigation-top-offset: 60%;
+  --swiper-navigation-sides-offset: 245px;
+  --swiper-pagination-bottom: 16px;
+  --swiper-theme-color: #104870;
+} */
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+  /* Styles for screens with a width between 480px and 768px */
+  :root {
+    --swiper-navigation-top-offset: 55%;
+    --swiper-navigation-sides-offset: 20px;
+    --swiper-pagination-bottom: 12px;
+    --swiper-theme-color: #104870;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+
+  /* Styles for screens with a width between 480px and 768px */
+  :root {
+    --swiper-navigation-top-offset: 55%;
+    --swiper-navigation-sides-offset: 40px;
+    --swiper-pagination-bottom: 12px;
+    --swiper-theme-color: #104870;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1500px) {
+
+  /* Styles for screens with a width between 480px and 768px */
+  :root {
+    --swiper-navigation-top-offset: 55%;
+    --swiper-navigation-sides-offset: 60px;
+    --swiper-pagination-bottom: 12px;
+    --swiper-theme-color: #104870;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 4000px) {
+
+  /* Styles for screens with a width between 480px and 768px */
+  :root {
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 245px;
+    --swiper-pagination-bottom: 12px;
+    --swiper-theme-color: #104870;
+  }
+}
+
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+
+.rec.rec-arrow {
+  background-color: transparent;
+  /* Make the default icon transparent */
+}
+
+/* .iWchow:hover:enabled.iWchow:focus:enabled {
+  color: #fff;
+  background-color: #104870;
+  box-shadow: 0 0 2px 0 #104870;
+} */
+
+/* .iWchow:hover:enabled:focus:enabled {
+  color: inherit;
+} */
+
+.iWchow:hover:enabled,
+.iWchow:focus:enabled {
+  color: #104870;
+  background-color: rgb(236, 230, 246);
+  box-shadow: 0 0 2px 0 #333;
+}
+
+/* hide disabled buttons */
+
+.rec.rec-arrow-left:hover:enabled,
+.rec.rec-arrow-right:hover:enabled {
+  background-color: transparent;
+  box-shadow: 0 0 1px 3px #104870;
+  color: #104870;
+}
+
+.rec.rec-arrow-left {
+  color: #104870;
+  font-size: 18px;
+  box-shadow: 0 0 1px 2px #104870;
+}
+
+.rec.rec-arrow-right {
+  color: #104870;
+  font-size: 18px;
+  box-shadow: 0 0 1px 2px #104870;
+}
+
+.CircularProgressbar-text{font-weight: bold;}
